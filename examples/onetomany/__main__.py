@@ -8,13 +8,13 @@ from ..common.base import session_factory
 def populate_database():
     session = session_factory()
 
-    bruno = ProjectManager("Bruno Krebs")
-    john = ProjectManager("John Doe")
+    Matheus = ProjectManager("Matheus Oliveira")
+    Roberta = ProjectManager("Roberta Larissa")
 
-    todo = Project("To-Do List", "Let's help people accomplish their tasks", bruno)
-    moneyfy = Project("Moneyfy", "Best app to manage personal finances", john)
-    questionmark = Project("QuestionMark", "App that simulates technical exams", bruno)
-    blog = Project("NewBlog", "New blog engine that solves all issues", john)
+    todo = Project("To-Do List", "Let's help people accomplish their tasks", Matheus)
+    moneyfy = Project("Moneyfy", "Best app to manage personal finances", Roberta)
+    questionmark = Project("QuestionMark", "App that simulates technical exams", Matheus)
+    blog = Project("NewBlog", "New blog engine that solves all issues", Roberta)
 
     session.add(todo)
     session.add(moneyfy)

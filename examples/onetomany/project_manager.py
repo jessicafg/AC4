@@ -10,7 +10,7 @@ class ProjectManager(Base):
     __tablename__ = 'project_manager'
 
     id = Column(Integer, primary_key=True)
-    name = Column(String)
+    name = Column(String(50))
     projects = relationship("Project", back_populates="project_manager")
 
     def __init__(self, name):

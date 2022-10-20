@@ -6,10 +6,10 @@ from ..common.base import session_factory
 
 def create_people():
     session = session_factory()
-    bruno = Person("Bruno Krebs", date(1984, 10, 20), 182, 84.5)
-    john = Person("John Doe", date(1990, 5, 17), 173, 90)
-    session.add(bruno)
-    session.add(john)
+    Matheus = Person("Matheus Oliveira", date(1998, 11, 4), 174, 94.7)
+    Roberta = Person("Roberta Larissa", date(1999, 10, 6), 170, 58)
+    session.add(Matheus)
+    session.add(Roberta)
     session.commit()
     session.close()
 

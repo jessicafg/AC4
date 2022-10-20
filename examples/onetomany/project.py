@@ -10,8 +10,8 @@ class Project(Base):
     __tablename__ = 'project'
 
     id = Column(Integer, primary_key=True)
-    title = Column(String)
-    description = Column(String)
+    title = Column(String(50))
+    description = Column(String(50))
     project_manager_id = Column(Integer, ForeignKey('project_manager.id'))
     project_manager = relationship("ProjectManager", back_populates="projects")
 

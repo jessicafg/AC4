@@ -8,14 +8,14 @@ from ..common.base import session_factory
 def populate_database():
     session = session_factory()
 
-    bruno = User("Bruno Krebs")
-    john = User("John Doe")
+    Matheus = User("Matheus Oliveira")
+    Roberta = User("Roberta Larissa")
 
-    brunos_mobile = Mobile("android", "99991111", bruno)
-    johns_mobile = Mobile("iphone", "55554444", john)
+    Matheus_mobile = Mobile("Android", "958616111", Matheus)
+    Roberta_mobile = Mobile("Iphone", "911161685", Roberta)
 
-    session.add(brunos_mobile)
-    session.add(johns_mobile)
+    session.add(Matheus_mobile)
+    session.add(Roberta_mobile)
 
     session.commit()
     session.close()
